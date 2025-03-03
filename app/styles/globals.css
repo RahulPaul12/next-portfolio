@@ -18,9 +18,10 @@
 }
 
 body {
-  color: var(--foreground);
+  color: #ededed;
   background: #000a1f;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 .heroElem {
   animation: scaleDownIn 1.5s cubic-bezier(0.87, 0, 0.13, 1);

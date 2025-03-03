@@ -1,101 +1,63 @@
 import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+    <>
+      <div
+        className="relative heroElem w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
+        style={{ maxWidth: "1200px" }}
+      >
+        <p className="text-xl mb-5">Hey, I'm Brayden.</p>
+        <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
+          I enjoy <span className="heroShiny1 text-fun-pink">building</span> and{" "}
+          <span className="heroShiny2 text-fun-pink">designing</span> for the
+          web.
+          <img
+            className="sqD squiggle-hero-html w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px]"
+            style={{ animationDelay: "0.1s" }}
+            src="/images/doodles/hero/html.svg"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <img
+            className="sqD squiggle-hero-nextjs hidden top-[75px] right-0 w-11"
+            style={{ animationDelay: "0.2s" }}
+            src="/images/doodles/hero/nextjs.svg"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <img
+            className="sqD bottom-[-300px] -right-1/4 sm:right-[-20%] lg:bottom-[-310px] lg:right-[-120px] w-[400px]"
+            style={{ animationDelay: "0.3s" }}
+            src="/images/doodles/hero/rahul.png"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <img
+            className="sqD hidden sm:block bottom-[-340px] left-[-180px]"
+            style={{ animationDelay: "0.4s" }}
+            src="/images/doodles/hero/coder.svg"
+          />
+          <img
+            className="sqD hidden sm:block left-[100px] lg:left-[160px] bottom-[-150px]"
+            style={{ animationDelay: "0.5s" }}
+            src="/images/doodles/hero/js.svg"
+          />
+          <img
+            className="sqD bottom-[-320px] right-[65%] sm:right-[45%]"
+            style={{ animationDelay: "0.6s" }}
+            src="/images/doodles/hero/dino.svg"
+          />
+          <img
+            className="sqD right-[-60px] sm:right-0 bottom-[-180px] lg:[5%]"
+            style={{ animationDelay: "0.7s" }}
+            src="/images/doodles/hero/paintbrush.svg"
+          />
+          <img
+            className="sqD squiggle-hero-pop1 hidden sm:block sm:top-[-130px] sm:left-[15%] lg:top-[-130px] lg:left-[120px]"
+            src="/images/doodles/hero/pop1.svg"
+          />
+          <img
+            className="sqD left-[-35px] bottom-[-85px] sm:bottom-[-100px] sm:left-5 opacity-40"
+            style={{ animationDelay: "0.9s" }}
+            src="/images/doodles/hero/code.svg"
+          />
+        </h1>
+        
+      </div>
+    </>
   );
 }

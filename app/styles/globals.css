@@ -3,26 +3,17 @@
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --background: #000a1f;
+  --foreground: #ededed;
 }
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000a1f;
-    --foreground: #ededed;
+@layer base{
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: var(--font-mono);
   }
 }
 
-body {
-  color: #ededed;
-  background: #000a1f;
-  font-family: Arial, Helvetica, sans-serif;
-  
-}
 .heroElem {
   animation: scaleDownIn 1.5s cubic-bezier(0.87, 0, 0.13, 1);
 }
@@ -30,39 +21,9 @@ body {
 .heroElem .sqD:not(.squiggle-hero-pop1) {
   animation: float 2s infinite ease-in-out;
 }
-.heroTitle .sqD {
-  @apply scale-[0.8] lg:scale-100;
+.heroTitle .sqD {@apply scale-[0.8] lg:scale-100;
 }
-.sqD {
-  @apply absolute z-[-10];
-}
-body::-webkit-scrollbar {
-  width: 8px;
-  background: transparent;
-}
-
-body::-webkit-scrollbar-track {
-  background: blue;
-  display: none;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #fff2;
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-}
-
-.landingSectionTitle::before {
-  content: "";
-  position: absolute;
-  left: 105%;
-  right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 4px;
-  width: 100vw;
-  @apply bg-pink-500;
-}
+.sqD {@apply absolute ;}
 
 
 @keyframes scaleDownIn {
@@ -86,4 +47,11 @@ body::-webkit-scrollbar-thumb {
   100% {
     transform: translateY(0px);
   }
+}
+
+@utility container {
+  width: 100%;
+  max-width: 82rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }

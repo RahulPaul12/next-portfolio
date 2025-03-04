@@ -1,18 +1,35 @@
-import Image from "next/image";
+"use client"
+import gsap from 'gsap';
+import { Draggable } from 'gsap/Draggable';
+import { useEffect, useRef } from 'react';
+gsap.registerPlugin(Draggable);
+
 export default function Home() {
+  const draggableRef = useRef(null);
+
+  useEffect(() => {
+    if (draggableRef.current) {
+      Draggable.create(draggableRef.current, {
+        type: 'x,y',
+        edgeResistance: 0.65,
+        bounds: window,
+        inertia: true, 
+      });
+    }
+  }, []);
+  
   return (
     <>
-      <div
-        className="relative heroElem w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
-        style={{ maxWidth: "1200px" }}
+      <div className="container relative heroElem w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
       >
-        <p className="text-xl mb-5">Hey, I'm Rahul.</p>
+        <p ref={draggableRef} className="text-xl mb-5">Hey, I'm Rahul.</p>
         <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
           I enjoy <span className="heroShiny1 text-fun-pink">building</span> and{" "}
           <span className="heroShiny2 text-fun-pink">designing</span> for the
           web.
-          <img
-            className="sqD squiggle-hero-html w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px]"
+          <img 
+            className="
+             sqD squiggle-hero-html w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px]"
             style={{ animationDelay: "0.1s" }}
             src="/images/doodles/hero/html.svg"
           />

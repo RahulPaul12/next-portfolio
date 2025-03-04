@@ -4,7 +4,7 @@ import routes from '@/public/data/routs.json'
 export default function HeaderLayout (){
     
     return (
-        <nav className="flex items-center justify-between">
+        <nav className="container flex items-center justify-between">
       <li className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
           <span className="font-black text-4xl flex items-center">

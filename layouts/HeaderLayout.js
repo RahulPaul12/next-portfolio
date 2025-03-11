@@ -11,7 +11,7 @@ export default function HeaderLayout (){
             <img
               className="mr-2 transform hover:rotate-360 hover:scale-75 transition-transform duration-500"
               src="/images/logo.png"
-              width="60"
+              width="180"
             />
             {"Rahul".split("").map((letter, index) => {
               return (

@@ -22,14 +22,15 @@ export default function Home() {
   
   return (
     <>
-      <div className="container relative heroElem w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
+      <div className="container relative heroElem w-full pt-40 lg:pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
       >
         <p ref={draggableRef.current[0]} className="text-xl mb-5">Hey, I'm Rahul.</p>
-        <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
+        <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl w-full relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold">
           I enjoy <span className="heroShiny1 text-fun-pink">building</span> and{" "}
           <span className="heroShiny2 text-fun-pink">designing</span> for the
           web.
-          <div ref={(el)=>draggableRef.current[1]=el}>
+          <div className='lg:block hidden'>
+        <div ref={(el)=>draggableRef.current[1]=el}>
               <img 
                 className="
                  sqD squiggle-hero-html w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px]"
@@ -85,7 +86,8 @@ export default function Home() {
             style={{ animationDelay: "0.9s" }}
             src="/images/doodles/hero/code.svg"
           />
-          </div>
+          </div> 
+        </div>
         </h1>
       </div>
     </>

@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 import "./styles/custom.css";
 import HeaderLayout from "@/layouts/HeaderLayout";
+import MobileLayout from "@/layouts/MobileLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <HeaderLayout/>
+        <MobileLayout/>
         {children}
       </body>
     </html>

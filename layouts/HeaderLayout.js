@@ -4,7 +4,7 @@ import routes from '@/public/data/routs.json'
 export default function HeaderLayout (){
     
     return (
-        <nav className="container flex items-center justify-between">
+        <nav className="container hidden lg:flex items-center justify-between">
       <li className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
           <span className="font-black text-4xl flex items-center">
@@ -13,13 +13,15 @@ export default function HeaderLayout (){
               src="/images/logo.png"
               width="100"
             />
-            {"Rahul".split("").map((letter, index) => {
-              return (
-                <span key={index} className="hover:text-fun-pink hover:-mt-2 transition-all duration-500 hover:duration-100">
-                  {letter}
-                </span>
-              );
-            })}
+            <div>
+                {"Rahul".split("").map((letter, index) => {
+                  return (
+                    <span key={index} className="hover:text-fun-pink hover:-mt-2 transition-all duration-500 hover:duration-100">
+                      {letter}
+                    </span>
+                  );
+                })}
+            </div>
           </span>
         </Link>
       </li>
@@ -36,5 +38,6 @@ export default function HeaderLayout (){
         })}
       </ul>
     </nav>
+    
     )
 }

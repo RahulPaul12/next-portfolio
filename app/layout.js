@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 import "./styles/custom.css";
+import "@/public/icon/iconly.css";
+
 import HeaderLayout from "@/layouts/HeaderLayout";
 import MobileLayout from "@/layouts/MobileLayout";
 

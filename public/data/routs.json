@@ -1,14 +1,22 @@
 [
     {
       "title": "Home",
-      "path": "/"
+      "path": "/",
+      "icon" :"icon-home-smile"
+    },
+    {
+      "title" : "About",
+      "path" : "/about",
+      "icon" : "icon-line-user"
     },
     {
       "title": "Projects",
-      "path": "/projects"
+      "path": "/projects",
+      "icon" : "icon-line-items"
     },
     {
-      "title": "Designs",
-      "path": "/designs"
+      "title": "Contact",
+      "path": "/contact",
+      "icon": "icon-line-global"
     }
   ]

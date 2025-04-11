@@ -4,13 +4,13 @@ export default function Contact() {
     
   return (
     <>
-      <div className="container relative heroElem w-full m-auto flex justify-center text-center flex-col items-center z-1">
+      <div className="container relative heroElem w-full m-auto flex justify-center text-center flex-col items-center -z-40">
           <div className="sub">
               Got a question, proposal or project or want to work <br />
               together on something? Feel free to reach out.
             </div>
-            <form className="w-[70%]">
-              <div className="flex justify-between">
+            <form className="w-full md:w-[70%]">
+              <div className="md:flex justify-between">
                 <div className="side">
                     <label htmlFor="name">Your Name</label>
                     <input

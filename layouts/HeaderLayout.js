@@ -30,7 +30,7 @@ export default function HeaderLayout (){
           return (
             <li
               key={index}
-              className="list-none text-white opacity-40 hover:opacity-100 transition-opacity"
+              className="list-none pb-2 text-white opacity-40 hover:opacity-100 transition-opacity hover:text-white  relative after:bg-white after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
             >
               <Link href={item.path}>{item.title}</Link>
             </li>

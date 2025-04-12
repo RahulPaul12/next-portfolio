@@ -22,54 +22,12 @@
 .contact h2 {@apply text-[2.2rem] capitalize tracking-[-1px]}
 
 .sub {@apply text-center leading-tight text-[2.3rem] text-[#dcdcdc] mt-12 mb-15}
-label {
-  margin-top: 20px;
-  display: block;
-  text-transform: capitalize;
-  color: #868f97;
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-input,
-textarea {
-  border: 0;
-  border-radius: 0;
-  box-sizing: border-box;
-  border-bottom: 1px solid white;
-  background: transparent;
-  outline: none;
-  box-shadow: none;
-  text-align: left;
-  font-size: 14.5px;
-  width: 100%;
-  color: white;
-  padding: 0.6em 0.6em 0.6em 0;
-  resize: none;
-  line-height: 1.4;
-}
+label {@apply mt-5 block capitalize text-[#868f97] text-xs mb-1}
+input,textarea {@apply border-0 box-border border-b border-white bg-transparent outline-none text-left w-full text-white py-[0.6em] pr-[0.6em] resize-none leading-[1.4]}
 .side{ @apply flex flex-col w-full md:w-[45%] items-start}
-.textarea {
-margin-top: 50px;
-text-align: left;
-}
-button {
-outline: none;
-cursor: pointer;
-text-transform: capitalize;
-padding: 15px 30px;
-background: transparent;
-border: 1px solid #1d5f80;
-border-radius: 16px;
-display: block;
-margin: 50px auto 0;
-position: relative;
-color:#1d5f80;
-}
-button:hover {
-  color: white;
-  background: #1d5f80;
-  transition: 0.3s all ease;
-}
+.textarea {@apply mt-12 text-left}
+button {@apply outline-none cursor-pointer capitalize py-3.5 px-7.5 bg-transparent hover:bg-[#1d5f80] hover:text-white transform transition-all duration-300 border border-[#1d5f80] rounded-2xl block mt-12 mx-auto mb-0 relative text-[#1d5f80]}
+
 
 @keyframes scaleDownIn {
   from {

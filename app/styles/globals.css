@@ -21,12 +21,12 @@
 .contact h5{@apply uppercase text-gray-400 text-[0.8rem] tracking-[3px]}
 .contact h2 {@apply text-[2.2rem] capitalize tracking-[-1px]}
 
-.sub {@apply text-center leading-tight text-[2.3rem] text-[#dcdcdc] mt-12 mb-15}
+.sub {@apply text-center leading-tight text-lg sm:text-[2rem] text-[#dcdcdc] mt-12 md:mt-12 sm:mt-25 mb-8 md:mb-15}
 label {@apply mt-5 block capitalize text-[#868f97] text-xs mb-1}
 input,textarea {@apply border-0 box-border border-b border-white bg-transparent outline-none text-left w-full text-white py-[0.6em] pr-[0.6em] resize-none leading-[1.4]}
 .side{ @apply flex flex-col w-full md:w-[45%] items-start}
 .textarea {@apply mt-12 text-left}
-button {@apply outline-none cursor-pointer capitalize py-3.5 px-7.5 bg-transparent hover:bg-[#1d5f80] hover:text-white transform transition-all duration-300 border border-[#1d5f80] rounded-2xl block mt-12 mx-auto mb-0 relative text-[#1d5f80]}
+.contact button {@apply outline-none cursor-pointer capitalize py-3.5 px-7.5 bg-transparent hover:bg-[#1d5f80] hover:text-white transform transition-all duration-300 border border-[#1d5f80] rounded-2xl block my-12 mx-auto mb-0 relative text-[#1d5f80]}
 
 
 @keyframes scaleDownIn {
